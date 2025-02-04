@@ -156,7 +156,7 @@ def plot_wafer_map(wafer_map):
 
 st.set_page_config(page_title="WaferMap Defect Detection", layout="wide", page_icon="🔬")
 
-filename = 'C:/Users/rajpu/atarashi no desu yo/templates/savemodle3.sav'
+filename = 'savemodle3.sav'
 model = pickle.load(open(filename, 'rb'))
 
 if isinstance(model, Booster):
