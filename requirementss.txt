@@ -1,2 +1,8 @@
-imageio-2.37.0 lazy-loader-0.4 networkx-3.4.2 scikit-image-0.25.1 tifffile-2025.1.10
-joblib-1.4.2 scikit-learn-1.6.1 threadpoolctl-3.5.0
+imageio==2.37.0
+lazy-loader==0.4
+networkx==3.4.2
+scikit-image==0.25.1
+tifffile==2025.1.10
+joblib==1.4.2
+scikit-learn==1.6.1
+threadpoolctl==3.5.0
