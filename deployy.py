@@ -189,13 +189,13 @@ if "prediction" not in st.session_state:
 
 def predict():
     try:
-        wafer_map = np.array(eval(x))
+        wafer_map = np.array(json.loads(x))
         st.session_state.wafer_shape = wafer_map.shape
         preprocessed_data = preprocess_wafer_data(wafer_map)
         st.session_state.prediction = model.predict(preprocessed_data)[0]
         st.session_state.wafer_map = wafer_map  # Store for plotting
-    except Exception as e:
-        st.session_state.prediction = f"⚠️ Error: {e}"
+    except (json.JSONDecodeError, ValueError) as e:
+        st.session_state.prediction = f"⚠️ Error: Invalid input format. Please enter a valid JSON array. ({e})"
         st.session_state.wafer_map = None
 
 st.button("🔍 Predict", on_click=predict)
