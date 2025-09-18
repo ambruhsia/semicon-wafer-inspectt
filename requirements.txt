@@ -55,7 +55,7 @@ pipreqs==0.5.0
 pipreqsnb==0.2.4
 platformdirs==4.3.6
 prompt_toolkit==3.0.50
-protobuf==5.29.3
+protobuf==5.29.5
 pure_eval==0.2.3
 pyarrow==19.0.0
 pydeck==0.9.1
